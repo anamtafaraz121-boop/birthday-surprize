@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 40px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#surprise {
+    display: none;
+    margin-top: 30px;
+}
+
+.cake {
+    font-size: 100px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="card">
+
+<h1>Happy Birthday ❤️🎂</h1>
+
+<p>I have something special for you...</p>
+
+<button onclick="showSurprise()">Open Your Surprise 🎁</button>
+
+<div id="surprise">
+
+<h2>You are very special to me ❤️</h2>
+
+<div class="cake">🎂</div>
+
+<p>
+I hope your birthday is filled with happiness,
+love and beautiful memories ✨
+</p>
+
+<p>Thank you for being in my life ❤️</p>
+
+</div>
+
+</div>
+</div>
+
+<script>
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
