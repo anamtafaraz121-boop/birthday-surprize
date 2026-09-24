@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise For You</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Elegant fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Mono:wght@300;400&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- FILM GRAIN -->
+    <div class="grain"></div>
+
+    <!-- MUSIC -->
+    <audio id="birthdaySong" loop>
+        <source src="assets/die-with-a-smile.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ================= COVER ================= -->
+
+    <section id="cover" class="screen active">
+
+        <div class="tiny-flower flower-one">✦</div>
+        <div class="tiny-flower flower-two">✧</div>
+
+        <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+
+        <h1>
+            For someone<br>
+            <span>very special.</span>
+        </h1>
+
+        <p class="intro">
+            I made something small for you.
+            <br>
+            Take your time.
+        </p>
+
+        <button id="openButton" class="main-button">
+            OPEN <span>→</span>
+        </button>
+
+        <p class="bottom-note">TURN YOUR SOUND ON ♡</p>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section id="memories" class="section">
+
+        <div class="section-heading">
+            <p class="eyebrow">CHAPTER I</p>
+
+            <h2>
+                Some moments<br>
+                I'd keep forever.
+            </h2>
+
+            <p>
+                A few little memories that mean more
+                than they probably know.
+            </p>
+        </div>
+
+
+        <div class="photo-wall">
+
+            <div class="polaroid rotate-left">
+                <div class="photo">
+                    <img src="assets/photo1.jpg" alt="Memory">
+                </div>
+                <p>one of my favourites</p>
+            </div>
+
+
+            <div class="polaroid rotate-right">
+                <div class="photo">
+                    <img src="assets/photo2.jpg" alt="Memory">
+                </div>
+                <p>this moment ♡</p>
+            </div>
+
+
+            <div class="polaroid rotate-small">
+                <div class="photo">
+                    <img src="assets/photo3.jpg" alt="Memory">
+                </div>
+                <p>always remember</p>
+            </div>
+
+        </div>
+
+
+        <button class="next-button" onclick="showSection('cake')">
+            THERE'S MORE <span>→</span>
+        </button>
+
+    </section>
+
+
+    <!-- ================= CAKE ================= -->
+
+    <section id="cake" class="section cake-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">CHAPTER II</p>
+
+            <h2>Make a wish.</h2>
+
+            <p id="cakeMessage">
+                Before we cut the cake...
+                <br>
+                make your wish.
+            </p>
+
+        </div>
+
+
+        <!-- CAKE -->
+
+        <div class="cake-area">
+
+            <div class="cake">
+
+                <!-- Candles -->
+                <div class="candles">
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Cake -->
+                <div class="cake-top"></div>
+
+                <div class="cake-body">
+
+                    <div class="cake-left"></div>
+
+                    <div class="cake-right"></div>
+
+                </div>
+
+                <div class="cake-plate"></div>
+
+            </div>
+
+        </div>
+
+
+        <button id="wishButton" class="main-button">
+            I MADE MY WISH ✦
+        </button>
+
+
+        <button id="cutButton" class="main-button hidden">
+            CUT THE CAKE 🔪
+        </button>
+
+
+        <button id="letterButton"
+                class="next-button hidden"
+                onclick="showSection('letter')">
+
+            OPEN YOUR LETTER →
+        </button>
+
+    </section>
+
+
+    <!-- ================= LETTER ================= -->
+
+    <section id="letter" class="section letter-section">
+
+        <div class="letter-card">
+
+            <p class="eyebrow">A LETTER FOR YOU</p>
+
+            <h2>Happy Birthday,</h2>
+
+            <h3>my love.</h3>
+
+
+            <div class="letter-text">
+
+                <p>
+                    I don't really know how to put everything
+                    I feel into words, but I wanted to try.
+                </p>
+
+                <p>
+                    You have this beautiful way of making
+                    ordinary moments feel like something
+                    worth remembering.
+                </p>
+
+                <p>
+                    I hope this new year of your life brings
+                    you the kind of happiness you don't have
+                    to question.
+                </p>
+
+                <p>
+                    And whenever life gets a little difficult,
+                    I hope you remember just how loved you are.
+                </p>
+
+                <p>
+                    Thank you for being you.
+                </p>
+
+            </div>
+
+
+            <div class="signature">
+
+                <span>with all my love,</span>
+
+                <strong>♡</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="final-line">
+            and I'd choose you<br>
+            <span>in every lifetime.</span>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
